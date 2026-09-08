@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Console</title>
+    <link rel="stylesheet" href="/css/lottery-console.css">
+</head>
+<body>
+<div class="app-shell">
+    <aside class="sidebar">
+        <div class="brand">
+            <div class="brand-mark">L</div>
+            <div>
+                <strong>Lottery</strong>
+                <span>Console</span>
+            </div>
+        </div>
+        <nav class="nav">
+            <button class="nav-item active" data-section="dashboard"><i data-lucide="layout-dashboard"></i><span>总览</span></button>
+            <button class="nav-item" data-section="database"><i data-lucide="database"></i><span>数据库</span></button>
+            <button class="nav-item" data-section="activities"><i data-lucide="calendar-range"></i><span>活动</span></button>
+            <button class="nav-item" data-section="draw"><i data-lucide="ticket"></i><span>抽奖</span></button>
+            <button class="nav-item" data-section="deploy"><i data-lucide="package-plus"></i><span>创建</span></button>
+            <button class="nav-item" data-section="catalog"><i data-lucide="boxes"></i><span>策略奖品</span></button>
+            <button class="nav-item" data-section="rules"><i data-lucide="git-branch"></i><span>规则</span></button>
+            <button class="nav-item" data-section="user"><i data-lucide="user-round-search"></i><span>用户</span></button>
+            <button class="nav-item" data-section="jobs"><i data-lucide="refresh-cw"></i><span>任务</span></button>
+        </nav>
+    </aside>
+
+    <main class="workspace">
+        <header class="topbar">
+            <div>
+                <h1 id="pageTitle">总览</h1>
+                <p id="pageSubTitle">本地抽奖系统控制台</p>
+            </div>
+            <div class="top-actions">
+                <span class="status-pill" id="serviceStatus">连接中</span>
+                <button class="icon-btn" id="refreshBtn" title="刷新"><i data-lucide="rotate-cw"></i></button>
+            </div>
+        </header>
+
+        <section class="section active" id="dashboard">
+            <div class="metrics-grid">
+                <div class="metric"><span>活动数</span><strong id="metricActivities">0</strong></div>
+                <div class="metric"><span>可抽奖活动</span><strong id="metricRunnableActivities">0</strong></div>
+                <div class="metric"><span>策略数</span><strong id="metricStrategies">0</strong></div>
+                <div class="metric"><span>奖品数</span><strong id="metricAwards">0</strong></div>
+                <div class="metric"><span>规则树</span><strong id="metricRules">0</strong></div>
+            </div>
+            <div class="notice-list" id="dashboardWarnings"></div>
+            <div class="panel">
+                <div class="panel-head">
+                    <h2>活动概览</h2>
+                    <button class="ghost-btn" data-action="load-activities"><i data-lucide="refresh-cw"></i><span>刷新</span></button>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>活动ID</th><th>名称</th><th>库存</th><th>策略</th><th>状态</th><th>时间</th></tr></thead>
+                        <tbody id="dashboardActivityRows"></tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="database">
+            <div class="diagnostic-grid">
+                <div class="panel">
+                    <div class="panel-head">
+                        <h2>运行状态</h2>
+                        <button class="ghost-btn" data-action="load-diagnostics"><i data-lucide="refresh-cw"></i><span>重新检查</span></button>
+                    </div>
+                    <div class="kv-list" id="runtimeInfo"></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head"><h2>数据量</h2></div>
+                    <div class="metrics-grid compact-metrics">
+                        <div class="metric"><span>活动</span><strong id="diagActivities">0</strong></div>
+                        <div class="metric"><span>运行中</span><strong id="diagRunning">0</strong></div>
+                        <div class="metric"><span>可抽奖</span><strong id="diagRunnable">0</strong></div>
+                        <div class="metric"><span>已过期运行</span><strong id="diagExpired">0</strong></div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-head"><h2>数据源</h2></div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>Key</th><th>数据库</th><th>驱动</th><th>连接</th><th>账号</th></tr></thead>
+                        <tbody id="dataSourceRows"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-head"><h2>检查结果</h2></div>
+                <div class="notice-list padded" id="diagnosticWarnings"></div>
+                <pre class="result-box" id="diagnosticResult">{}</pre>
+            </div>
+        </section>
+
+        <section class="section" id="activities">
+            <div class="panel">
+                <div class="panel-head">
+                    <h2>活动列表</h2>
+                    <div class="inline-form">
+                        <input id="activityFilterId" placeholder="活动ID">
+                        <input id="activityFilterName" placeholder="活动名称">
+                        <button class="primary-btn" data-action="load-activities"><i data-lucide="search"></i><span>查询</span></button>
+                    </div>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead><tr><th>活动ID</th><th>名称</th><th>描述</th><th>总库存</th><th>剩余</th><th>每人</th><th>策略ID</th><th>状态</th><th>创建人</th></tr></thead>
+                        <tbody id="activityRows"></tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="panel form-panel">
+                <div class="panel-head"><h2>状态流转</h2></div>
+                <div class="form-grid compact">
+                    <label>活动ID<input id="stateActivityId"></label>
+                    <label>当前状态<select id="stateCurrent"></select></label>
+                    <label>动作<select id="stateAction"></select></label>
+                    <button class="primary-btn align-end" data-action="change-state"><i data-lucide="send"></i><span>执行</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="draw">
+            <div class="split">
+                <div class="panel form-panel">
+                    <div class="panel-head"><h2>指定活动抽奖</h2></div>
+                    <div class="form-grid">
+                        <label>用户ID<input id="drawUid" value="test_user"></label>
+                        <label>活动ID<input id="drawActivityId"></label>
+                        <button class="primary-btn span-2" data-action="draw"><i data-lucide="sparkles"></i><span>开始抽奖</span></button>
+                    </div>
+                </div>
+                <div class="panel form-panel">
+                    <div class="panel-head"><h2>量化人群抽奖</h2></div>
+                    <div class="form-grid">
+                        <label>用户ID<input id="qDrawUid" value="test_user"></label>
+                        <label>规则树ID<input id="qDrawTreeId" value="2110081902"></label>
+                        <label>性别<input id="qDrawGender" value="man"></label>
+                        <label>年龄<input id="qDrawAge" value="25"></label>
+                        <button class="primary-btn span-2" data-action="qdraw"><i data-lucide="wand-sparkles"></i><span>规则抽奖</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-head"><h2>抽奖结果</h2></div>
+                <div class="draw-summary empty" id="drawSummary">
+                    <div class="draw-summary-title">等待抽奖</div>
+                    <div class="draw-summary-info">点击上方按钮后，这里会显示中奖奖品、未中奖结果或详细失败原因。</div>
+                </div>
+                <pre class="result-box" id="drawResult">{}</pre>
+            </div>
+        </section>
+
+        <section class="section" id="deploy">
+            <div class="panel form-panel">
+                <div class="panel-head">
+                    <h2>创建活动配置</h2>
+                    <button class="ghost-btn" data-action="fill-create-defaults"><i data-lucide="copy-plus"></i><span>生成默认值</span></button>
+                </div>
+                <div class="form-grid">
+                    <label>活动ID<input id="newActivityId"></label>
+                    <label>活动名称<input id="newActivityName"></label>
+                    <label>开始时间<input id="newBegin" type="datetime-local"></label>
+                    <label>结束时间<input id="newEnd" type="datetime-local"></label>
+                    <label>总库存<input id="newStock" type="number" value="100"></label>
+                    <label>每人次数<input id="newTakeCount" type="number" value="3"></label>
+                    <label>策略ID<input id="newStrategyId"></label>
+                    <label>策略模式<select id="newStrategyMode"></select></label>
+                    <label>发奖方式<select id="newGrantType"></select></label>
+                    <label>创建人<input id="newCreator" value="ui"></label>
+                    <label class="span-2">活动描述<input id="newActivityDesc"></label>
+                </div>
+            </div>
+            <div class="split">
+                <div class="panel">
+                    <div class="panel-head">
+                        <h2>奖品</h2>
+                        <button class="ghost-btn" data-action="add-award-row"><i data-lucide="plus"></i><span>新增</span></button>
+                    </div>
+                    <div id="awardEditor" class="editor-list"></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head">
+                        <h2>概率</h2>
+                        <button class="ghost-btn" data-action="add-detail-row"><i data-lucide="plus"></i><span>新增</span></button>
+                    </div>
+                    <div id="detailEditor" class="editor-list"></div>
+                </div>
+            </div>
+            <button class="primary-btn full-width" data-action="create-activity"><i data-lucide="save"></i><span>保存活动配置</span></button>
+        </section>
+
+        <section class="section" id="catalog">
+            <div class="split">
+                <div class="panel">
+                    <div class="panel-head"><h2>策略</h2></div>
+                    <div class="table-wrap"><table><thead><tr><th>策略ID</th><th>描述</th><th>模式</th><th>发奖</th></tr></thead><tbody id="strategyRows"></tbody></table></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head"><h2>奖品</h2></div>
+                    <div class="table-wrap"><table><thead><tr><th>奖品ID</th><th>名称</th><th>类型</th><th>内容</th></tr></thead><tbody id="awardRows"></tbody></table></div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-head">
+                    <h2>策略明细</h2>
+                    <div class="inline-form">
+                        <input id="strategyDetailId" placeholder="策略ID">
+                        <button class="primary-btn" data-action="load-strategy-detail"><i data-lucide="search"></i><span>查询</span></button>
+                    </div>
+                </div>
+                <pre class="result-box" id="strategyDetailResult">{}</pre>
+            </div>
+        </section>
+
+        <section class="section" id="rules">
+            <div class="split">
+                <div class="panel">
+                    <div class="panel-head"><h2>规则树</h2></div>
+                    <div class="table-wrap"><table><thead><tr><th>规则树ID</th><th>名称</th><th>根节点</th></tr></thead><tbody id="ruleRows"></tbody></table></div>
+                </div>
+                <div class="panel form-panel">
+                    <div class="panel-head"><h2>规则决策</h2></div>
+                    <div class="form-grid">
+                        <label>用户ID<input id="ruleUid" value="test_user"></label>
+                        <label>规则树ID<input id="ruleTreeId" value="2110081902"></label>
+                        <label>性别<input id="ruleGender" value="man"></label>
+                        <label>年龄<input id="ruleAge" value="25"></label>
+                        <button class="primary-btn span-2" data-action="rule-decision"><i data-lucide="play"></i><span>执行规则</span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <div class="panel-head">
+                    <h2>规则详情</h2>
+                    <div class="inline-form">
+                        <input id="ruleDetailId" placeholder="规则树ID">
+                        <button class="primary-btn" data-action="load-rule-detail"><i data-lucide="search"></i><span>查询</span></button>
+                    </div>
+                </div>
+                <pre class="result-box" id="ruleResult">{}</pre>
+            </div>
+        </section>
+
+        <section class="section" id="user">
+            <div class="panel form-panel">
+                <div class="panel-head"><h2>用户活动</h2></div>
+                <div class="form-grid compact">
+                    <label>用户ID<input id="userUid" value="test_user"></label>
+                    <label>活动ID<input id="userActivityId"></label>
+                    <button class="primary-btn align-end" data-action="partake"><i data-lucide="hand"></i><span>参与活动</span></button>
+                    <button class="ghost-btn align-end" data-action="load-user-data"><i data-lucide="search"></i><span>查询记录</span></button>
+                </div>
+            </div>
+            <div class="split">
+                <div class="panel">
+                    <div class="panel-head"><h2>领取记录</h2></div>
+                    <div class="table-wrap"><table><thead><tr><th>领取ID</th><th>活动ID</th><th>次数</th><th>策略</th><th>状态</th><th>时间</th></tr></thead><tbody id="takeRows"></tbody></table></div>
+                </div>
+                <div class="panel">
+                    <div class="panel-head"><h2>中奖记录</h2></div>
+                    <div class="table-wrap"><table><thead><tr><th>订单ID</th><th>奖品</th><th>发奖</th><th>MQ</th><th>操作</th></tr></thead><tbody id="userAwardRows"></tbody></table></div>
+                </div>
+            </div>
+            <pre class="result-box" id="userResult">{}</pre>
+        </section>
+
+        <section class="section" id="jobs">
+            <div class="split">
+                <div class="panel">
+                    <div class="panel-head">
+                        <h2>活动扫描</h2>
+                        <button class="primary-btn" data-action="activity-state-scan"><i data-lucide="scan-line"></i><span>执行扫描</span></button>
+                    </div>
+                    <div class="table-wrap"><table><thead><tr><th>活动ID</th><th>名称</th><th>状态</th><th>结束时间</th></tr></thead><tbody id="todoRows"></tbody></table></div>
+                </div>
+                <div class="panel form-panel">
+                    <div class="panel-head"><h2>MQ 补偿</h2></div>
+                    <div class="form-grid compact">
+                        <label>库编号<input id="mqDb" type="number" value="1"></label>
+                        <label>表编号<input id="mqTb" type="number" value="0"></label>
+                        <button class="primary-btn align-end" data-action="mq-scan"><i data-lucide="list-filter"></i><span>扫描</span></button>
+                    </div>
+                    <pre class="result-box" id="jobResult">{}</pre>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script src="/js/lottery-console.js"></script>
+</body>
+</html>

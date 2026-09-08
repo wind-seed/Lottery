@@ -1,0 +1,37 @@
+spring:
+  application:
+    name: Lottery
+  kafka:
+    listener:
+      auto-startup: true
+
+dubbo:
+  registry:
+    address: nacos://127.0.0.1:8848
+
+nacos:
+  discovery:
+    service-name: Lottery
+    auto-register: true
+
+lottery:
+  kafka:
+    producer:
+      enabled: true
+    listener:
+      enabled: true
+  xxl-job:
+    enabled: true
+
+mini-db-router:
+  jdbc:
+    datasource:
+      db00:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/lottery?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+      db01:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/lottery_01?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true
+      db02:
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/lottery_02?useUnicode=true&characterEncoding=utf8&autoReconnect=true&zeroDateTimeBehavior=convertToNull&serverTimezone=UTC&useSSL=false&allowPublicKeyRetrieval=true

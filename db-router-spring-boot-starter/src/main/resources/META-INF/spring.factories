@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.windseed.middleware.db.router.config.DBRouterAutoConfiguration

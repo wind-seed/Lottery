@@ -1,0 +1,262 @@
+{"kind":"deck","id":"pr/sn45ty","name":"Deck"}
+{"kind":"layout","layoutId":"0012fce7-aeb4-4c5d-a4de-9353919f2448","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"844e90d9-7b02-42fb-9cc2-27e1d80aa6da","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/z60886","slide":1,"title":"Lottery","textShapes":8}
+{"kind":"shape","id":"sh/kvq98nel","slide":1,"bbox":[760,0,520,720]}
+{"kind":"textbox","id":"sh/juh8z2dg","slide":1,"name":"text","text":"Lottery","textPreview":"Lottery","textChars":7,"textLines":1,"bbox":[72,86,560,88]}
+{"kind":"textbox","id":"sh/it8r6xwv","slide":1,"name":"text","text":"抽奖系统项目介绍","textPreview":"抽奖系统项目介绍","textChars":8,"textLines":1,"bbox":[72,178,560,58]}
+{"kind":"textbox","id":"sh/xszqxsva","slide":1,"name":"text","text":"面试讲解版 | Java 8 · Spring Boot · DDD · Redis · MySQL · Kafka","textPreview":"面试讲解版 | Java 8 · Spring Boot · DDD · Redis · MySQL · Kafka","textChars":58,"textLines":1,"bbox":[72,270,620,72]}
+{"kind":"textbox","id":"sh/wr694nep","slide":1,"name":"text","text":"核心定位","textPreview":"核心定位","textChars":4,"textLines":1,"bbox":[820,94,260,32]}
+{"kind":"textbox","id":"sh/vqx8vid4","slide":1,"name":"text","text":"面向营销活动的抽奖与发奖系统，重点体现工程分层、抽奖算法、库存并发、规则引擎和最终一致性。","textPreview":"面向营销活动的抽奖与发奖系统，重点体现工程分层、抽奖算法、库存并发、规则引擎和最终一致性。","textChars":45,"textLines":1,"bbox":[820,145,340,160]}
+{"kind":"textbox","id":"sh/apor2dwj","slide":1,"text":"可运行 UI + 后端接口 + 数据库脚本","textPreview":"可运行 UI + 后端接口 + 数据库脚本","textChars":21,"textLines":1,"bbox":[820,540,320,42]}
+{"kind":"textbox","id":"sh/hoja9cve","slide":1,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/gna9g7et","slide":1,"name":"text","text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"notes","id":"nt/z60886","slide":1,"text":"[Sources]\nD:/java/Lottery/pom.xml\nD:/java/Lottery/PROJECT-FILES-GUIDE.md\nD:/java/Lottery/PROJECT-INTERVIEW-QA.md"}
+{"kind":"slide","id":"sl/buxcfr","slide":2,"title":"PROJECT INTERVIEW","textShapes":8}
+{"kind":"textbox","id":"sh/29wb2hkj","slide":2,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/pc7axw3a","slide":2,"name":"text","text":"用一句话把项目讲清楚","textPreview":"用一句话把项目讲清楚","textChars":10,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/obyt4r2p","slide":2,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/bepsz6l0","slide":2,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/qdgb61kf","slide":2,"name":"text","text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"textbox","id":"sh/dg7a1w36","slide":2,"name":"text","text":"我会把这个项目介绍成一个“营销抽奖中台”的雏形，而不是普通 CRUD。","textPreview":"我会把这个项目介绍成一个“营销抽奖中台”的雏形，而不是普通 CRUD。","textChars":35,"textLines":1,"bbox":[92,210,1040,72]}
+{"kind":"shape","id":"sh/cfyt8b2l","slide":2,"bbox":[118,343,7,7]}
+{"kind":"textbox","id":"sh/rilsn2lw","slide":2,"name":"text","text":"业务闭环：活动配置、用户参与、概率抽奖、中奖发奖、任务补偿","textPreview":"业务闭环：活动配置、用户参与、概率抽奖、中奖发奖、任务补偿","textChars":29,"textLines":1,"bbox":[136,335,952,44]}
+{"kind":"shape","id":"sh/6hcrux4b","slide":2,"bbox":[118,413,7,7]}
+{"kind":"textbox","id":"sh/ovulgfq9","slide":2,"name":"text","text":"技术闭环：DDD 分层、Redis 扣库存、MySQL 分库分表、Kafka 解耦、XXL-Job 扫描","textPreview":"技术闭环：DDD 分层、Redis 扣库存、MySQL 分库分表、Kafka 解耦、XXL-Job 扫描","textChars":52,"textLines":1,"bbox":[136,405,952,44]}
+{"kind":"shape","id":"sh/pw3m9k7u","slide":2,"bbox":[118,483,7,7]}
+{"kind":"textbox","id":"sh/29c3ep83","slide":2,"name":"text","text":"面试重点：我能讲清楚系统为什么这样拆、并发风险在哪里、生产环境怎么继续优化","textPreview":"面试重点：我能讲清楚系统为什么这样拆、并发风险在哪里、生产环境怎么继续优化","textChars":37,"textLines":1,"bbox":[136,475,952,44]}
+{"kind":"notes","id":"nt/buxcfr","slide":2,"text":"[Sources]\nD:/java/Lottery/PROJECT-INTERVIEW-QA.md\nD:/java/Lottery/README-LOCAL.md"}
+{"kind":"slide","id":"sl/ij6mlw","slide":3,"title":"PROJECT INTERVIEW","textShapes":16}
+{"kind":"textbox","id":"sh/judsr690","slide":3,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/kfmtkba5","slide":3,"name":"text","text":"系统采用分层架构承载抽奖主链路","textPreview":"系统采用分层架构承载抽奖主链路","textChars":15,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/5gfutgrq","slide":3,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/ap4bu1s3","slide":3,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/vqdsn69o","slide":3,"name":"text","text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/wrmtwba9","slide":3,"bbox":[120,108,960,54]}
+{"kind":"textbox","id":"sh/xsvapwru","slide":3,"name":"text","text":"接口层","textPreview":"接口层","textChars":3,"textLines":1,"bbox":[148,120,170,28]}
+{"kind":"textbox","id":"sh/ulobqlsn","slide":3,"name":"text","text":"HTTP API / Dubbo Facade / 本地 UI","textPreview":"HTTP API / Dubbo Facade / 本地 UI","textChars":31,"textLines":1,"bbox":[340,121,660,28]}
+{"kind":"shape","id":"sh/fmxczq9s","slide":3,"bbox":[120,190,960,54]}
+{"kind":"textbox","id":"sh/fy9k3mlk","slide":3,"name":"text","text":"应用层","textPreview":"应用层","textChars":3,"textLines":1,"bbox":[148,202,170,28]}
+{"kind":"textbox","id":"sh/ex03ahkz","slide":3,"name":"text","text":"抽奖流程编排 / MQ 发送 / 定时任务","textPreview":"抽奖流程编排 / MQ 发送 / 定时任务","textChars":21,"textLines":1,"bbox":[340,203,660,28]}
+{"kind":"shape","id":"sh/1krm5c3a","slide":3,"bbox":[120,272,960,54]}
+{"kind":"textbox","id":"sh/0zilcr25","slide":3,"name":"text","text":"领域层","textPreview":"领域层","textChars":3,"textLines":1,"bbox":[148,284,170,28]}
+{"kind":"textbox","id":"sh/nm947mlg","slide":3,"name":"text","text":"活动 / 策略 / 规则 / 奖品核心业务","textPreview":"活动 / 策略 / 规则 / 奖品核心业务","textChars":21,"textLines":1,"bbox":[340,285,660,28]}
+{"kind":"shape","id":"sh/2l03ehkv","slide":3,"bbox":[120,354,960,54]}
+{"kind":"textbox","id":"sh/pobm9w3m","slide":3,"name":"text","text":"基础设施层","textPreview":"基础设施层","textChars":5,"textLines":1,"bbox":[148,366,170,28]}
+{"kind":"textbox","id":"sh/onilgr21","slide":3,"name":"text","text":"MyBatis / Repository / Redis / DAO","textPreview":"MyBatis / Repository / Redis / DAO","textChars":34,"textLines":1,"bbox":[340,367,660,28]}
+{"kind":"shape","id":"sh/bqt4b6ls","slide":3,"bbox":[120,436,960,54]}
+{"kind":"textbox","id":"sh/apk3i1k7","slide":3,"name":"text","text":"数据与中间件","textPreview":"数据与中间件","textChars":6,"textLines":1,"bbox":[148,448,170,28]}
+{"kind":"textbox","id":"sh/ml4na54f","slide":3,"name":"text","text":"MySQL 分库分表 / Redis / Kafka / XXL-Job","textPreview":"MySQL 分库分表 / Redis / Kafka / XXL-Job","textChars":36,"textLines":1,"bbox":[340,449,660,28]}
+{"kind":"textbox","id":"sh/7mdo3a50","slide":3,"name":"text","text":"运行入口：lottery-interfaces","textPreview":"运行入口：lottery-interfaces","textChars":23,"textLines":1,"bbox":[120,535,430,32]}
+{"kind":"textbox","id":"sh/8n6pcvml","slide":3,"name":"text","text":"核心规则沉淀：lottery-domain","textPreview":"核心规则沉淀：lottery-domain","textChars":21,"textLines":1,"bbox":[650,535,430,32]}
+{"kind":"notes","id":"nt/ij6mlw","slide":3,"text":"[Sources]\nD:/java/Lottery/pom.xml\nD:/java/Lottery/PROJECT-FILES-GUIDE.md"}
+{"kind":"slide","id":"sl/p88s3p","slide":4,"title":"PROJECT INTERVIEW","textShapes":16}
+{"kind":"textbox","id":"sh/ofyt8zi1","slide":4,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/3epsfu1g","slide":4,"name":"text","text":"多模块拆分让职责边界更清楚","textPreview":"多模块拆分让职责边界更清楚","textChars":13,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/2dgb6p0v","slide":4,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/1c7adkja","slide":4,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/gbet4zip","slide":4,"name":"text","text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/fa5sbu14","slide":4,"bbox":[92,205,485,86]}
+{"kind":"textbox","id":"sh/e9wb2p0z","slide":4,"name":"text","text":"lottery-interfaces","textPreview":"lottery-interfaces","textChars":18,"textLines":1,"bbox":[116,220,430,26]}
+{"kind":"textbox","id":"sh/l8rupoje","slide":4,"name":"text","text":"启动入口、HTTP API、Dubbo 实现、本地 UI","textPreview":"启动入口、HTTP API、Dubbo 实现、本地 UI","textChars":28,"textLines":1,"bbox":[116,253,430,24]}
+{"kind":"shape","id":"sh/07itgji9","slide":4,"bbox":[642,205,485,86]}
+{"kind":"textbox","id":"sh/ep8zmtk7","slide":4,"name":"text","text":"lottery-application","textPreview":"lottery-application","textChars":19,"textLines":1,"bbox":[666,220,430,26]}
+{"kind":"textbox","id":"sh/fahgvels","slide":4,"name":"text","text":"参与活动、抽奖、发奖、MQ 的流程编排","textPreview":"参与活动、抽奖、发奖、MQ 的流程编排","textChars":19,"textLines":1,"bbox":[666,253,430,24]}
+{"kind":"shape","id":"sh/0bqhoj2d","slide":4,"bbox":[92,323,485,86]}
+{"kind":"textbox","id":"sh/1czyxo3y","slide":4,"name":"text","text":"lottery-domain","textPreview":"lottery-domain","textChars":14,"textLines":1,"bbox":[116,338,430,26]}
+{"kind":"textbox","id":"sh/qlozi9kb","slide":4,"name":"text","text":"活动状态机、抽奖算法、规则树、奖品发放","textPreview":"活动状态机、抽奖算法、规则树、奖品发放","textChars":19,"textLines":1,"bbox":[116,371,430,24]}
+{"kind":"shape","id":"sh/rmxgrelw","slide":4,"bbox":[642,323,485,86]}
+{"kind":"textbox","id":"sh/snqhkj2h","slide":4,"name":"text","text":"lottery-infrastructure","textPreview":"lottery-infrastructure","textChars":22,"textLines":1,"bbox":[666,338,430,26]}
+{"kind":"textbox","id":"sh/dozyto3m","slide":4,"name":"text","text":"Repository、DAO、PO、Redis 工具","textPreview":"Repository、DAO、PO、Redis 工具","textChars":26,"textLines":1,"bbox":[666,371,430,24]}
+{"kind":"shape","id":"sh/ahszudkf","slide":4,"bbox":[92,441,485,86]}
+{"kind":"textbox","id":"sh/bi103il0","slide":4,"name":"text","text":"lottery-rpc / common","textPreview":"lottery-rpc / common","textChars":20,"textLines":1,"bbox":[116,456,430,26]}
+{"kind":"textbox","id":"sh/7mtwva1c","slide":4,"name":"text","text":"远程契约、DTO、统一返回、全局枚举","textPreview":"远程契约、DTO、统一返回、全局枚举","textChars":18,"textLines":1,"bbox":[116,489,430,24]}
+{"kind":"shape","id":"sh/6lkvm50r","slide":4,"bbox":[642,441,485,86]}
+{"kind":"textbox","id":"sh/tovex0ji","slide":4,"name":"text","text":"db-router-starter","textPreview":"db-router-starter","textChars":17,"textLines":1,"bbox":[666,456,430,26]}
+{"kind":"textbox","id":"sh/8n2dovix","slide":4,"name":"text","text":"自定义分库分表 Starter","textPreview":"自定义分库分表 Starter","textChars":15,"textLines":1,"bbox":[666,489,430,24]}
+{"kind":"notes","id":"nt/p88s3p","slide":4,"text":"[Sources]\nD:/java/Lottery/pom.xml\nD:/java/Lottery/PROJECT-FILES-GUIDE.md"}
+{"kind":"slide","id":"sl/32chxx","slide":5,"title":"PROJECT INTERVIEW","textShapes":20}
+{"kind":"textbox","id":"sh/4f2xc76d","slide":5,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/3etg325s","slide":5,"name":"text","text":"抽奖流程先拿资格，再算概率，最后发奖","textPreview":"抽奖流程先拿资格，再算概率，最后发奖","textChars":18,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/2dkfaxo7","slide":5,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/hcby1cnm","slide":5,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/gb2x8761","slide":5,"name":"text","text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/fa9gz25g","slide":5,"bbox":[80,235,180,188]}
+{"kind":"textbox","id":"sh/up0f6xov","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[100,255,40,36]}
+{"kind":"textbox","id":"sh/l8vydwnq","slide":5,"name":"text","text":"创建活动","textPreview":"创建活动","textChars":4,"textLines":1,"bbox":[100,312,148,32]}
+{"kind":"textbox","id":"sh/07mh4r65","slide":5,"name":"text","text":"活动、策略、奖品配置落库","textPreview":"活动、策略、奖品配置落库","textChars":12,"textLines":1,"bbox":[100,354,144,60]}
+{"kind":"shape","id":"sh/qxo32xwn","slide":5,"bbox":[266,325,26,2]}
+{"kind":"shape","id":"sh/bixkv2d8","slide":5,"bbox":[300,235,180,188]}
+{"kind":"textbox","id":"sh/cj6l47et","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[320,255,40,36]}
+{"kind":"textbox","id":"sh/dkf2xcve","slide":5,"name":"text","text":"状态流转","textPreview":"状态流转","textChars":4,"textLines":1,"bbox":[320,312,148,32]}
+{"kind":"textbox","id":"sh/2t43yxwr","slide":5,"name":"text","text":"编辑 → 审核 → 运行","textPreview":"编辑 → 审核 → 运行","textChars":12,"textLines":1,"bbox":[320,354,144,60]}
+{"kind":"shape","id":"sh/3uxkr2dw","slide":5,"bbox":[486,325,26,2]}
+{"kind":"shape","id":"sh/ov6l0neh","slide":5,"bbox":[520,235,180,188]}
+{"kind":"textbox","id":"sh/pwf2tsv2","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[540,255,40,36]}
+{"kind":"textbox","id":"sh/mp83ahcv","slide":5,"name":"text","text":"用户参与","textPreview":"用户参与","textChars":4,"textLines":1,"bbox":[540,312,148,32]}
+{"kind":"textbox","id":"sh/nqh43mdg","slide":5,"name":"text","text":"校验时间、状态、次数、库存","textPreview":"校验时间、状态、次数、库存","textChars":13,"textLines":1,"bbox":[540,354,144,60]}
+{"kind":"shape","id":"sh/ju90vets","slide":5,"bbox":[706,325,26,2]}
+{"kind":"shape","id":"sh/it0z29c7","slide":5,"bbox":[740,235,180,188]}
+{"kind":"textbox","id":"sh/5wbixoby","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[760,255,40,36]}
+{"kind":"textbox","id":"sh/4v2h4jud","slide":5,"name":"text","text":"执行抽奖","textPreview":"执行抽奖","textChars":4,"textLines":1,"bbox":[760,312,148,32]}
+{"kind":"textbox","id":"sh/ryt0zyto","slide":5,"name":"text","text":"按策略算法命中奖品","textPreview":"按策略算法命中奖品","textChars":9,"textLines":1,"bbox":[760,354,144,60]}
+{"kind":"shape","id":"sh/6xkz6tcj","slide":5,"bbox":[926,325,26,2]}
+{"kind":"shape","id":"sh/t0bi1obu","slide":5,"bbox":[960,235,180,188]}
+{"kind":"textbox","id":"sh/sz2183u9","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[980,255,40,36]}
+{"kind":"textbox","id":"sh/f2d03yt0","slide":5,"name":"text","text":"生成发奖单","textPreview":"生成发奖单","textChars":5,"textLines":1,"bbox":[980,312,148,32]}
+{"kind":"textbox","id":"sh/e1kjatcf","slide":5,"name":"text","text":"落库并同步或异步发奖","textPreview":"落库并同步或异步发奖","textChars":10,"textLines":1,"bbox":[980,354,144,60]}
+{"kind":"textbox","id":"sh/crmhk3qt","slide":5,"name":"text","text":"面试表达：主流程不是一次随机数调用，而是资格、库存、策略、订单、发奖的一致性链路","textPreview":"面试表达：主流程不是一次随机数调用，而是资格、库存、策略、订单、发奖的一致性链路","textChars":40,"textLines":1,"bbox":[120,500,980,70]}
+{"kind":"notes","id":"nt/32chxx","slide":5,"text":"[Sources]\nD:/java/Lottery/lottery-application/src/main/java/com/windseed/lottery/application/process/draw/impl/ActivityDrawProcessImpl.java\nD:/java/Lottery/PROJECT-INTERVIEW-QA.md"}
+{"kind":"slide","id":"sl/8vupuy","slide":6,"title":"PROJECT INTERVIEW","textShapes":11}
+{"kind":"textbox","id":"sh/pkza5cr2","slide":6,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/2hobuhsb","slide":6,"name":"text","text":"抽奖算法支持成本控制和中奖体验两种取向","textPreview":"抽奖算法支持成本控制和中奖体验两种取向","textChars":19,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/nixs3mtw","slide":6,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/c7qt0rad","slide":6,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/x8za9wry","slide":6,"name":"text","text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/al8byhsn","slide":6,"bbox":[92,210,500,270]}
+{"kind":"textbox","id":"sh/b6hs7m98","slide":6,"name":"text","text":"单项概率","textPreview":"单项概率","textChars":4,"textLines":1,"bbox":[125,245,400,36]}
+{"kind":"shape","id":"sh/kbat4bap","slide":6,"bbox":[130,318,7,7]}
+{"kind":"textbox","id":"sh/lcjudwra","slide":6,"name":"text","text":"奖品库存为空时，该奖品命中结果变为未中奖","textPreview":"奖品库存为空时，该奖品命中结果变为未中奖","textChars":20,"textLines":1,"bbox":[148,310,387,44]}
+{"kind":"shape","id":"sh/503a5gva","slide":6,"bbox":[130,383,7,7]}
+{"kind":"textbox","id":"sh/kzutcbep","slide":6,"name":"text","text":"适合严格控制活动成本","textPreview":"适合严格控制活动成本","textChars":10,"textLines":1,"bbox":[148,375,387,44]}
+{"kind":"shape","id":"sh/jyls36d4","slide":6,"bbox":[690,210,500,270]}
+{"kind":"textbox","id":"sh/ixsba1wz","slide":6,"name":"text","text":"总体概率","textPreview":"总体概率","textChars":4,"textLines":1,"bbox":[723,245,400,36]}
+{"kind":"shape","id":"sh/t43u9gvm","slide":6,"bbox":[728,318,7,7]}
+{"kind":"textbox","id":"sh/s3utgbe1","slide":6,"name":"text","text":"排除无库存奖品后，在剩余奖品里重新分布概率","textPreview":"排除无库存奖品后，在剩余奖品里重新分布概率","textChars":21,"textLines":1,"bbox":[746,310,387,44]}
+{"kind":"shape","id":"sh/72ls7qdg","slide":6,"bbox":[728,383,7,7]}
+{"kind":"textbox","id":"sh/61cbelwv","slide":6,"name":"text","text":"适合提升用户中奖体验","textPreview":"适合提升用户中奖体验","textChars":10,"textLines":1,"bbox":[746,375,387,44]}
+{"kind":"textbox","id":"sh/98jaxwv2","slide":6,"name":"text","text":"核心类：SingleRateRandomDrawAlgorithm / EntiretyRateRandomDrawAlgorithm / DrawExecImpl","textPreview":"核心类：SingleRateRandomDrawAlgorithm / EntiretyRateRandomDrawAlgorithm / DrawExecImpl","textChars":82,"textLines":1,"bbox":[120,548,1040,30]}
+{"kind":"notes","id":"nt/8vupuy","slide":6,"text":"[Sources]\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/strategy/service/algorithm/impl/SingleRateRandomDrawAlgorithm.java\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/strategy/service/algorithm/impl/EntiretyRateRandomDrawAlgorithm.java\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/strategy/service/draw/impl/DrawExecImpl.java"}
+{"kind":"slide","id":"sl/3xid2n","slide":7,"title":"PROJECT INTERVIEW","textShapes":11}
+{"kind":"textbox","id":"sh/0fexkr6l","slide":7,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/ze5gbmp0","slide":7,"name":"text","text":"活动状态机避免非法上线和过期抽奖","textPreview":"活动状态机避免非法上线和过期抽奖","textChars":16,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/edwfihof","slide":7,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/947yhw72","slide":7,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/o3yxor6h","slide":7,"name":"text","text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"textbox","id":"sh/nipgfmpw","slide":7,"text":"编辑","textPreview":"编辑","textChars":2,"textLines":1,"bbox":[120,265,110,52]}
+{"kind":"shape","id":"sh/mhwfm1ob","slide":7,"bbox":[240,291,48,2]}
+{"kind":"textbox","id":"sh/x87ylgny","slide":7,"text":"提审","textPreview":"提审","textChars":2,"textLines":1,"bbox":[300,265,110,52]}
+{"kind":"shape","id":"sh/w7yhsb6d","slide":7,"bbox":[420,291,48,2]}
+{"kind":"textbox","id":"sh/2lwzmlof","slide":7,"text":"审核通过","textPreview":"审核通过","textChars":4,"textLines":1,"bbox":[480,265,140,52]}
+{"kind":"shape","id":"sh/3m50f6p0","slide":7,"bbox":[630,291,58,2]}
+{"kind":"textbox","id":"sh/onehob6l","slide":7,"text":"运行中","textPreview":"运行中","textChars":3,"textLines":1,"bbox":[700,265,110,52]}
+{"kind":"shape","id":"sh/ponihg76","slide":7,"bbox":[820,291,68,2]}
+{"kind":"textbox","id":"sh/apwzqlob","slide":7,"text":"关闭","textPreview":"关闭","textChars":2,"textLines":1,"bbox":[900,265,110,52]}
+{"kind":"shape","id":"sh/bq50jqpw","slide":7,"bbox":[150,405,950,95]}
+{"kind":"textbox","id":"sh/cbehsv6h","slide":7,"name":"text","text":"状态模式的价值","textPreview":"状态模式的价值","textChars":7,"textLines":1,"bbox":[180,428,240,28]}
+{"kind":"textbox","id":"sh/xcnil072","slide":7,"name":"text","text":"每个状态类只处理自己允许的动作，非法流转默认拒绝；比散落在业务代码里的 if/else 更容易维护和测试。","textPreview":"每个状态类只处理自己允许的动作，非法流转默认拒绝；比散落在业务代码里的 if/else 更容易维护和测试。","textChars":53,"textLines":1,"bbox":[430,428,610,48]}
+{"kind":"notes","id":"nt/3xid2n","slide":7,"text":"[Sources]\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/activity/service/stateflow\nD:/java/Lottery/lottery-common/src/main/java/com/windseed/lottery/common/Constants.java"}
+{"kind":"slide","id":"sl/g6y1ul","slide":8,"title":"PROJECT INTERVIEW","textShapes":12}
+{"kind":"textbox","id":"sh/4ru1oz2p","slide":8,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/3qlkvel4","slide":8,"name":"text","text":"规则树把用户分层从代码里抽出来","textPreview":"规则树把用户分层从代码里抽出来","textChars":15,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/i5cjm9kj","slide":8,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/h432t43y","slide":8,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/g3u1kz2t","slide":8,"name":"text","text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"textbox","id":"sh/v2l0rul8","slide":8,"text":"userGender","textPreview":"userGender","textChars":10,"textLines":1,"bbox":[150,255,160,48]}
+{"kind":"textbox","id":"sh/u1cjipkn","slide":8,"text":"userAge","textPreview":"userAge","textChars":7,"textLines":1,"bbox":[420,215,140,48]}
+{"kind":"textbox","id":"sh/10725o3i","slide":8,"text":"userAge","textPreview":"userAge","textChars":7,"textLines":1,"bbox":[420,330,140,48]}
+{"kind":"textbox","id":"sh/0ze1wj2x","slide":8,"text":"策略 A","textPreview":"策略 A","textChars":4,"textLines":1,"bbox":[720,205,120,44]}
+{"kind":"textbox","id":"sh/qdkr2x4f","slide":8,"text":"策略 B","textPreview":"策略 B","textChars":4,"textLines":1,"bbox":[720,295,120,44]}
+{"kind":"textbox","id":"sh/bet8v2l0","slide":8,"text":"策略 C","textPreview":"策略 C","textChars":4,"textLines":1,"bbox":[720,385,120,44]}
+{"kind":"shape","id":"sh/cf2947ml","slide":8,"bbox":[310,239,110,40]}
+{"kind":"shape","id":"sh/dgbqxc36","slide":8,"bbox":[310,279,110,75]}
+{"kind":"shape","id":"sh/2p0ryx4j","slide":8,"bbox":[560,227,160,12]}
+{"kind":"shape","id":"sh/3at8r2l4","slide":8,"bbox":[560,239,160,78]}
+{"kind":"shape","id":"sh/ob290nmp","slide":8,"bbox":[560,354,160,53]}
+{"kind":"textbox","id":"sh/pcbqts3u","slide":8,"name":"text","text":"新增规则时，优先新增 LogicFilter，而不是改抽奖主流程。","textPreview":"新增规则时，优先新增 LogicFilter，而不是改抽奖主流程。","textChars":33,"textLines":1,"bbox":[150,485,840,42]}
+{"kind":"textbox","id":"sh/m54rah4n","slide":8,"name":"text","text":"示例：年龄、性别可扩展为城市、会员等级、黑名单、人群标签。","textPreview":"示例：年龄、性别可扩展为城市、会员等级、黑名单、人群标签。","textChars":29,"textLines":1,"bbox":[150,540,840,32]}
+{"kind":"notes","id":"nt/g6y1ul","slide":8,"text":"[Sources]\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/rule/service/engine/impl/RuleEngineHandle.java\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/rule/service/logic/impl/UserAgeFilter.java\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/rule/service/logic/impl/UserGenderFilter.java\nD:/java/Lottery/doc/assets/sql/lottery.sql"}
+{"kind":"slide","id":"sl/2mn540","slide":9,"title":"PROJECT INTERVIEW","textShapes":13}
+{"kind":"textbox","id":"sh/y9oju18n","slide":9,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/lcz25w7e","slide":9,"name":"text","text":"库存并发的目标是不超卖，异常可补偿","textPreview":"库存并发的目标是不超卖，异常可补偿","textChars":17,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/kbq1wrqt","slide":9,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/b6x0zm9w","slide":9,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/a5ojqh8b","slide":9,"name":"text","text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/x8fi1w72","slide":9,"bbox":[86,210,520,320]}
+{"kind":"textbox","id":"sh/c761srqh","slide":9,"name":"text","text":"活动资格库存","textPreview":"活动资格库存","textChars":6,"textLines":1,"bbox":[120,240,360,36]}
+{"kind":"shape","id":"sh/nid0v290","slide":9,"bbox":[125,313,7,7]}
+{"kind":"textbox","id":"sh/2h4jmh8f","slide":9,"name":"text","text":"Redis incr 预占活动库存","textPreview":"Redis incr 预占活动库存","textChars":17,"textLines":1,"bbox":[143,305,402,44]}
+{"kind":"shape","id":"sh/07ed8bqh","slide":9,"bbox":[125,365,7,7]}
+{"kind":"textbox","id":"sh/18nuhgr2","slide":9,"name":"text","text":"超过库存立即 decr 回滚","textPreview":"超过库存立即 decr 回滚","textChars":14,"textLines":1,"bbox":[143,357,402,44]}
+{"kind":"shape","id":"sh/e5wv618b","slide":9,"bbox":[125,417,7,7]}
+{"kind":"textbox","id":"sh/f65cf69w","slide":9,"name":"text","text":"setNx 库存 token 防重复占位","textPreview":"setNx 库存 token 防重复占位","textChars":20,"textLines":1,"bbox":[143,409,402,44]}
+{"kind":"shape","id":"sh/sjed4bq5","slide":9,"bbox":[125,469,7,7]}
+{"kind":"textbox","id":"sh/dknudgrq","slide":9,"name":"text","text":"数据库保存参与记录和发奖单","textPreview":"数据库保存参与记录和发奖单","textChars":13,"textLines":1,"bbox":[143,461,402,44]}
+{"kind":"shape","id":"sh/qhcb218f","slide":9,"bbox":[690,210,420,320]}
+{"kind":"textbox","id":"sh/ri5cb690","slide":9,"name":"text","text":"兜底机制","textPreview":"兜底机制","textChars":4,"textLines":1,"bbox":[725,240,300,36]}
+{"kind":"shape","id":"sh/wfydgvqp","slide":9,"bbox":[730,323,7,7]}
+{"kind":"textbox","id":"sh/xg7ep07a","slide":9,"name":"text","text":"Redis 失败：拒绝参与","textPreview":"Redis 失败：拒绝参与","textChars":13,"textLines":1,"bbox":[748,315,312,44]}
+{"kind":"shape","id":"sh/lk3mdwv2","slide":9,"bbox":[730,383,7,7]}
+{"kind":"textbox","id":"sh/kjulkreh","slide":9,"name":"text","text":"数据库失败：删除 token 补偿","textPreview":"数据库失败：删除 token 补偿","textChars":17,"textLines":1,"bbox":[748,375,312,44]}
+{"kind":"shape","id":"sh/ji14b6dw","slide":9,"bbox":[730,443,7,7]}
+{"kind":"textbox","id":"sh/yhs3i1wb","slide":9,"name":"text","text":"极端异常：定时对账修复","textPreview":"极端异常：定时对账修复","textChars":11,"textLines":1,"bbox":[748,435,312,44]}
+{"kind":"notes","id":"nt/2mn540","slide":9,"text":"[Sources]\nD:/java/Lottery/lottery-infrastructure/src/main/java/com/windseed/lottery/infrastructure/repository/ActivityRepository.java\nD:/java/Lottery/lottery-domain/src/main/java/com/windseed/lottery/domain/activity/service/partake/BaseActivityPartake.java"}
+{"kind":"slide","id":"sl/11rfo5","slide":10,"title":"PROJECT INTERVIEW","textShapes":12}
+{"kind":"textbox","id":"sh/4ri98zm9","slide":10,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/3q98zulo","slide":10,"name":"text","text":"高增长数据分散写入，发奖链路异步补偿","textPreview":"高增长数据分散写入，发奖链路异步补偿","textChars":18,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/2pgr6p43","slide":10,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/ho7qxk3y","slide":10,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/gny94fmd","slide":10,"name":"text","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/fmp8vals","slide":10,"bbox":[88,215,500,260]}
+{"kind":"textbox","id":"sh/ulg72547","slide":10,"name":"text","text":"分库分表","textPreview":"分库分表","textChars":4,"textLines":1,"bbox":[120,245,300,34]}
+{"kind":"shape","id":"sh/1kbq9o32","slide":10,"bbox":[125,318,7,7]}
+{"kind":"textbox","id":"sh/0j29gjmh","slide":10,"name":"text","text":"主库保存活动、策略、奖品、规则","textPreview":"主库保存活动、策略、奖品、规则","textChars":15,"textLines":1,"bbox":[143,310,377,44]}
+{"kind":"shape","id":"sh/elkzepc7","slide":10,"bbox":[125,373,7,7]}
+{"kind":"textbox","id":"sh/fmt0nuds","slide":10,"name":"text","text":"用户参与与发奖流水按 uId 路由","textPreview":"用户参与与发奖流水按 uId 路由","textChars":17,"textLines":1,"bbox":[143,365,377,44]}
+{"kind":"shape","id":"sh/0n21gfud","slide":10,"bbox":[125,428,7,7]}
+{"kind":"textbox","id":"sh/1obipkvy","slide":10,"name":"text","text":"@DBRouter + AOP + 动态数据源 + MyBatis 拦截器","textPreview":"@DBRouter + AOP + 动态数据源 + MyBatis 拦截器","textChars":37,"textLines":1,"bbox":[143,420,377,44]}
+{"kind":"shape","id":"sh/qh0za5cb","slide":10,"bbox":[690,215,500,260]}
+{"kind":"textbox","id":"sh/ri90jadg","slide":10,"name":"text","text":"消息与任务","textPreview":"消息与任务","textChars":5,"textLines":1,"bbox":[722,245,300,34]}
+{"kind":"shape","id":"sh/sjihcfu1","slide":10,"bbox":[727,318,7,7]}
+{"kind":"textbox","id":"sh/dkrilkvm","slide":10,"name":"text","text":"Kafka 解耦抽奖与发奖","textPreview":"Kafka 解耦抽奖与发奖","textChars":13,"textLines":1,"bbox":[745,310,377,44]}
+{"kind":"shape","id":"sh/ad4jm9cf","slide":10,"bbox":[727,373,7,7]}
+{"kind":"textbox","id":"sh/bed0ved0","slide":10,"name":"text","text":"MQ 状态支持失败重试","textPreview":"MQ 状态支持失败重试","textChars":11,"textLines":1,"bbox":[745,365,377,44]}
+{"kind":"shape","id":"sh/nmlo72p0","slide":10,"bbox":[727,428,7,7]}
+{"kind":"textbox","id":"sh/mlcnyxof","slide":10,"name":"text","text":"XXL-Job 扫描活动状态和待补偿消息","textPreview":"XXL-Job 扫描活动状态和待补偿消息","textChars":20,"textLines":1,"bbox":[745,420,377,44]}
+{"kind":"notes","id":"nt/11rfo5","slide":10,"text":"[Sources]\nD:/java/Lottery/db-router-spring-boot-starter\nD:/java/Lottery/lottery-application/src/main/java/com/windseed/lottery/application/mq\nD:/java/Lottery/lottery-application/src/main/java/com/windseed/lottery/application/worker/LotteryXxlJob.java\nD:/java/Lottery/doc/assets/sql"}
+{"kind":"slide","id":"sl/nx5rkg","slide":11,"title":"PROJECT INTERVIEW","textShapes":19}
+{"kind":"textbox","id":"sh/3apg7ixs","slide":11,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/4byhgnyx","slide":11,"name":"text","text":"面试时可以用这些证据证明项目可运行","textPreview":"面试时可以用这些证据证明项目可运行","textChars":17,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/pc7y9sfi","slide":11,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/ulwzadgv","slide":11,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/fm5g3ihg","slide":11,"name":"text","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"shape","id":"sh/g7ehcny1","slide":11,"bbox":[92,202,1050,54]}
+{"kind":"textbox","id":"sh/h8ny5sfm","slide":11,"name":"text","text":"本地启动","textPreview":"本地启动","textChars":4,"textLines":1,"bbox":[116,210,170,28]}
+{"kind":"textbox","id":"sh/6hcz6dgz","slide":11,"name":"text","text":"scripts/start-local.ps1","textPreview":"scripts/start-local.ps1","textChars":23,"textLines":1,"bbox":[310,210,320,28]}
+{"kind":"textbox","id":"sh/7i5gzyhk","slide":11,"name":"text","text":"一键启动 Spring Boot + 本地 UI","textPreview":"一键启动 Spring Boot + 本地 UI","textChars":24,"textLines":1,"bbox":[660,210,420,28]}
+{"kind":"textbox","id":"sh/b2pczq9s","slide":11,"name":"text","text":"数据库初始化","textPreview":"数据库初始化","textChars":6,"textLines":1,"bbox":[116,275,170,28]}
+{"kind":"textbox","id":"sh/a1wvql87","slide":11,"name":"text","text":"scripts/init-db.ps1","textPreview":"scripts/init-db.ps1","textChars":19,"textLines":1,"bbox":[310,275,320,28]}
+{"kind":"textbox","id":"sh/x47u10ry","slide":11,"name":"text","text":"创建 lottery、lottery_01、lottery_02","textPreview":"创建 lottery、lottery_01、lottery_02","textChars":32,"textLines":1,"bbox":[660,275,420,28]}
+{"kind":"shape","id":"sh/c3ydsvqd","slide":11,"bbox":[92,332,1050,54]}
+{"kind":"textbox","id":"sh/z6pc3ap4","slide":11,"name":"text","text":"接口冒烟","textPreview":"接口冒烟","textChars":4,"textLines":1,"bbox":[116,340,170,28]}
+{"kind":"textbox","id":"sh/y5gvu58j","slide":11,"name":"text","text":"scripts/smoke-test.ps1","textPreview":"scripts/smoke-test.ps1","textChars":22,"textLines":1,"bbox":[310,340,320,28]}
+{"kind":"textbox","id":"sh/l87u507u","slide":11,"name":"text","text":"健康检查、诊断、活动、抽奖等接口","textPreview":"健康检查、诊断、活动、抽奖等接口","textChars":16,"textLines":1,"bbox":[660,340,420,28]}
+{"kind":"textbox","id":"sh/k7ydwvq9","slide":11,"name":"text","text":"项目讲解","textPreview":"项目讲解","textChars":4,"textLines":1,"bbox":[116,405,170,28]}
+{"kind":"textbox","id":"sh/fa5cr69k","slide":11,"name":"text","text":"PROJECT-FILES-GUIDE.md","textPreview":"PROJECT-FILES-GUIDE.md","textChars":22,"textLines":1,"bbox":[310,405,320,28]}
+{"kind":"textbox","id":"sh/e9cbi18z","slide":11,"name":"text","text":"模块和文件级说明","textPreview":"模块和文件级说明","textChars":8,"textLines":1,"bbox":[660,405,420,28]}
+{"kind":"shape","id":"sh/2h47mdwz","slide":11,"bbox":[92,462,1050,54]}
+{"kind":"textbox","id":"sh/32dofidk","slide":11,"name":"text","text":"面试问答","textPreview":"面试问答","textChars":4,"textLines":1,"bbox":[116,470,170,28]}
+{"kind":"textbox","id":"sh/43mpo3e5","slide":11,"name":"text","text":"PROJECT-INTERVIEW-QA.md","textPreview":"PROJECT-INTERVIEW-QA.md","textChars":23,"textLines":1,"bbox":[310,470,320,28]}
+{"kind":"textbox","id":"sh/p4v6h8va","slide":11,"name":"text","text":"技术追问和答案","textPreview":"技术追问和答案","textChars":7,"textLines":1,"bbox":[660,470,420,28]}
+{"kind":"notes","id":"nt/nx5rkg","slide":11,"text":"[Sources]\nD:/java/Lottery/scripts\nD:/java/Lottery/README-LOCAL.md\nD:/java/Lottery/PROJECT-FILES-GUIDE.md\nD:/java/Lottery/PROJECT-INTERVIEW-QA.md"}
+{"kind":"slide","id":"sl/pdybjt","slide":12,"title":"PROJECT INTERVIEW","textShapes":12}
+{"kind":"textbox","id":"sh/18bq1kvi","slide":12,"name":"text","text":"PROJECT INTERVIEW","textPreview":"PROJECT INTERVIEW","textChars":17,"textLines":1,"bbox":[72,52,420,24]}
+{"kind":"textbox","id":"sh/e5krq5wr","slide":12,"name":"text","text":"最后把能力落到面试官关心的问题","textPreview":"最后把能力落到面试官关心的问题","textChars":15,"textLines":1,"bbox":[72,86,820,56]}
+{"kind":"shape","id":"sh/f6t8zadc","slide":12,"bbox":[72,154,1136,1]}
+{"kind":"textbox","id":"sh/s329ovel","slide":12,"name":"text","text":"Lottery 抽奖系统项目介绍","textPreview":"Lottery 抽奖系统项目介绍","textChars":16,"textLines":1,"bbox":[72,668,420,22]}
+{"kind":"textbox","id":"sh/t4bqx0v6","slide":12,"name":"text","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1160,668,48,22]}
+{"kind":"textbox","id":"sh/610rm5wv","slide":12,"name":"text","text":"我能重点展开的 5 个方向","textPreview":"我能重点展开的 5 个方向","textChars":13,"textLines":1,"bbox":[110,214,560,44]}
+{"kind":"shape","id":"sh/r2t8vad0","slide":12,"bbox":[125,300,7,7]}
+{"kind":"textbox","id":"sh/4zi9kvep","slide":12,"name":"text","text":"DDD 分层和模块边界","textPreview":"DDD 分层和模块边界","textChars":11,"textLines":1,"bbox":[143,292,602,44]}
+{"kind":"shape","id":"sh/50rqt0va","slide":12,"bbox":[125,348,7,7]}
+{"kind":"textbox","id":"sh/lc7i58ru","slide":12,"name":"text","text":"抽奖算法与概率模型","textPreview":"抽奖算法与概率模型","textChars":9,"textLines":1,"bbox":[143,340,602,44]}
+{"kind":"shape","id":"sh/kby1c3ap","slide":12,"bbox":[125,396,7,7]}
+{"kind":"textbox","id":"sh/zap03y94","slide":12,"name":"text","text":"Redis + MySQL 的库存一致性","textPreview":"Redis + MySQL 的库存一致性","textChars":20,"textLines":1,"bbox":[143,388,602,44]}
+{"kind":"shape","id":"sh/y9gjatsj","slide":12,"bbox":[125,444,7,7]}
+{"kind":"textbox","id":"sh/x8ni1ory","slide":12,"name":"text","text":"规则树和状态机的扩展性","textPreview":"规则树和状态机的扩展性","textChars":11,"textLines":1,"bbox":[143,436,602,44]}
+{"kind":"shape","id":"sh/c7e18jad","slide":12,"bbox":[125,492,7,7]}
+{"kind":"textbox","id":"sh/b650zy9s","slide":12,"name":"text","text":"Kafka + XXL-Job 的最终一致性","textPreview":"Kafka + XXL-Job 的最终一致性","textChars":22,"textLines":1,"bbox":[143,484,602,44]}
+{"kind":"shape","id":"sh/a5wj6ts7","slide":12,"bbox":[805,235,300,260]}
+{"kind":"textbox","id":"sh/p4nixorm","slide":12,"name":"text","text":"收束表达","textPreview":"收束表达","textChars":4,"textLines":1,"bbox":[835,270,230,32]}
+{"kind":"textbox","id":"sh/o3e14jah","slide":12,"name":"text","text":"这个项目不是只展示功能，而是展示我对业务建模、并发控制和工程落地的理解。","textPreview":"这个项目不是只展示功能，而是展示我对业务建模、并发控制和工程落地的理解。","textChars":36,"textLines":1,"bbox":[835,330,220,112]}
+{"kind":"notes","id":"nt/pdybjt","slide":12,"text":"[Sources]\nD:/java/Lottery/PROJECT-INTERVIEW-QA.md\nD:/java/Lottery/PROJECT-FILES-GUIDE.md"}
