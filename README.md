@@ -244,14 +244,6 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\stop-middleware.ps
 - 当前单机 Windows 环境不代表企业生产环境，500 并发以上已经出现连接拒绝和请求超时。
 - 系统具备高并发架构雏形，但还需要继续做限流、Redis 库存预扣、接口异步化、Tomcat 线程池调优、数据库连接池调优和多实例部署。
 
-## 后续优化方向
-
-| 方向 | 价值 |
-|---|---|
-| 接入 Redis 原子库存扣减 | 减少数据库热点写入，提高抽奖入口吞吐量 |
-| 增加 Sentinel 或 Redis 令牌桶限流 | 防止瞬时流量直接打穿 Tomcat 和数据库 |
-| 抽奖链路进一步异步化 | 将非核心写入和发奖动作下沉到 MQ |
-| 增加接口鉴权和后台登录 | 避免管理接口裸露 |
 | 增加 Testcontainers 或 Docker Compose | 让 MySQL、Kafka、Nacos、XXL-Job 环境更容易复现 |
 | 增加 Prometheus + Grafana | 展示 QPS、P95、错误率、线程池和数据库连接池指标 |
 
